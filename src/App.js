@@ -204,7 +204,7 @@ const Head = () => {
             className="centerpeice"
             style={{
               transform: y.interpolate((y) =>
-                window.innerWidth <= 500
+                window.innerWidth < 500
                   ? `translateX(-${y / 2}%)`
                   : window.innerWidth < 1025 && window.innerWidth > 500
                   ? `translateY(-${y / 3.5}vh)`
