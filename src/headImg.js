@@ -61,7 +61,7 @@ const HeadImg = (props) => {
         src={props.imageSet}
         alt="head"
         key="gif"
-        style={{ display: `${isNaN(props.imageSet) ? "inline" : "none"}` }}
+        style={{ opacity: `${isNaN(props.imageSet) ? 1 : 0}` }}
       ></img>
       {GalleryArr.map((img) => {
         return (
