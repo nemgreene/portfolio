@@ -1,0 +1,528 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: fit-content;
+  margin: auto;
+  background-color: #9fa786;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.container::-webkit-scrollbar {
+  width: 0 !important;
+}
+.container {
+  overflow: -moz-scrollbars-none;
+}
+.container {
+  -ms-overflow-style: none;
+}
+
+.page1 {
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.frameButtonArr {
+  height: fit-content;
+  margin-left: -2vw;
+  width: 1vw;
+  transform: rotate(90deg);
+}
+
+.radialMenuTabs {
+  position: absolute;
+  height: 2vw;
+  width: 2vh;
+  margin-top: -2vw;
+  padding-left: 15vh;
+  transform: rotate(90deg);
+  mix-blend-mode: multiply;
+}
+
+.radialMenuImg {
+  z-index: 2;
+  position: absolute;
+  width: 30%;
+  height: 200%;
+  background-size: cover;
+  background-position: center;
+  margin-left: 1vw;
+  transition: transform 0.25s;
+  opacity: 1;
+  mix-blend-mode: multiply;
+}
+.hoverContainer {
+  height: 2vh;
+  width: 5vh;
+  margin-left: 18.5vw;
+}
+
+.radialMenuImg:hover {
+  transform: translateX(1vw);
+}
+
+.UIContainer {
+  width: 100vw;
+  height: 40vw;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  background-image: url("../src/img/helloWorld.png");
+}
+.UIContainer1 {
+  height: 16vw;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.UIContainer2 {
+  position: absolute;
+  height: 1vw;
+  width: 1vw;
+  margin: auto;
+  position: absolute;
+  top: 5vw;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.helloWorldImg {
+  height: 20vw;
+  width: 50vw;
+  position: absolute;
+  background-size: contain;
+  margin-top: -24vh;
+  margin-left: 5%;
+  background-repeat: no-repeat;
+}
+
+.headContainer {
+  height: 40vw;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.headImg {
+  height: 150%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: -10%;
+  bottom: 0;
+  right: 0;
+  background-size: contain;
+  mix-blend-mode: multiply;
+}
+.page2 {
+  position: relative;
+  height: 100vh;
+  z-index: 0;
+}
+.page2Contaner {
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #9fa786;
+}
+.centerpeice {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  opacity: 1;
+}
+
+.toastImg {
+  height: 50vw;
+  width: 100vh;
+  transform-origin: top left;
+  transform: rotate(-90deg) scaleX(-1);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
+  margin-left: 25vw;
+  position: absolute;
+}
+.page2Row {
+  height: 100vh;
+  width: 50vw;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  z-index: 11;
+}
+.pg2Col1,
+.pg2Col2,
+.pg2Col3 {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+  height: 22vw;
+  color: #111;
+
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 275px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+  text-align: center;
+  font-size: 3vh;
+  transition: 0.3s;
+  cursor: pointer;
+  height: 66.66vh;
+}
+.pg2Col1:hover {
+  color: #aa66bb;
+}
+.pg2Col2:hover {
+  color: #aa66bb;
+}
+.pg2Col3:hover {
+  color: #aa66bb;
+}
+
+.centerPeiceOverlay {
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  z-index: 6;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.scrollPrompt {
+  position: relative;
+}
+
+.scrollImg {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0vw;
+  bottom: 0;
+  right: 0;
+  height: 4vh;
+  cursor: pointer;
+  z-index: 2;
+}
+.page2Underlay {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  width: 50vw;
+  z-index: 1;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: auto;
+  width: 100%;
+}
+.hello {
+  padding: 5vh 8vw 1vw 5vw;
+  font-size: 1.4em;
+  font-family: "GTWalsheim", sans-serif;
+  line-height: 1.2em;
+  font-weight: bolder;
+}
+
+.bioContainer {
+  position: relative;
+  margin-top: 1.5vw;
+}
+.bio {
+  padding: 75vh 8vw 1vw 5vw;
+  padding-left: 3vh;
+  padding-right: 3vh;
+  height: fit-content;
+  font-size: 1.9vh;
+  margin: auto;
+  position: absolute;
+  text-align: right;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-family: Athene, serif;
+  line-height: 2.2vh;
+}
+.text2Container {
+  width: 100%;
+  position: relative;
+}
+.text2 {
+  height: fit-content;
+  width: 30vw;
+  margin: auto;
+
+  font-family: "GTWalsheim", sans-serif;
+  line-height: 2.5vh;
+  font-weight: 600;
+  color: antiquewhite;
+}
+
+.projectsContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.displayContainer1,
+.displayContainer2,
+.displayContainer3,
+.displayContainer4 {
+  width: 100%;
+  text-align: center;
+  height: 50%;
+}
+.displayGrid1,
+.displayGrid2 {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+}
+.displayContainer {
+  position: relative;
+  z-index: 5;
+  height: 80%;
+}
+.underlayDiv {
+  height: 100%;
+}
+
+.displayImg {
+  width: 100%;
+  height: 10vh;
+  margin: auto;
+  margin-top: 10%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.displayUnderlay {
+  padding-top: 4vw;
+  height: 89.5%;
+  width: 100%;
+  z-index: 4;
+  position: absolute;
+  opacity: 0.33;
+}
+
+.diplayHeader {
+  margin: -1vh 0.5vh 1vh 0.5vh;
+  padding: 5% 5% 0 5%;
+
+  font-family: Athene, serif;
+  font-weight: bold;
+  font-size: 23px;
+}
+.displayDesc {
+  text-decoration: none;
+  width: 90%;
+  margin: auto;
+  font-size: 11px;
+  font-family: "Lucida Console", "Monaco", monospace;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.text1 {
+  height: fit-content;
+  margin-bottom: 2vw;
+}
+.li1,
+.li2,
+.li3,
+.li4,
+.li5,
+.li6 {
+  margin: 5px;
+}
+.scrollPrompt {
+  position: relative;
+  z-index: 1;
+}
+.pg2ColText {
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: inherit 3px dotted;
+}
+.contact {
+  height: 99%;
+  width: 100%;
+  margin-top: 1vw;
+  position: absolute;
+}
+.contactTextContainer {
+  padding-top: 37vh;
+  width: 100%;
+  height: fit-content;
+  text-align: right;
+  right: 0;
+  float: right;
+
+  margin: 0 auto;
+  position: absolute;
+  top: -5%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.contactImg {
+  margin: 0 auto;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 20vh;
+  mix-blend-mode: darken;
+  z-index: 1;
+  transform: rotate(-90deg) translateY(-2vh);
+}
+.contactBio {
+  width: 40vw;
+  font-family: "Lucida Console", "Monaco", monospace;
+  margin: auto;
+}
+.logoContainer {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  margin: auto;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-size: 1.1em;
+  text-align: center;
+}
+.logoImg {
+  height: 3vh;
+  margin: 5px;
+  margin-top: 1.4vw;
+}
+.findMe {
+  display: none;
+}
+
+.testContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  z-index: 5;
+}
+.offsetCOntainer {
+  position: relative;
+}
+.onload {
+  width: 100vw;
+  color: antiquewhite;
+  background-color: black;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: sticky;
+  position: -webkit-sticky;
+  color: white;
+}
+
+.uiContainer {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: fit-content;
+  width: 100%;
+  font-size: 10vh;
+  text-align: center;
+  font-family: "Lucida Console", "Monaco", monospace;
+  opacity: 0.5;
+}
+.loadingBar {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: scroll;
+  background-color: black;
+  width: 100%;
+  height: 25px;
+}
+.loadingItem {
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
+
+  width: 200px;
+}
+.stickyDiv {
+  position: sticky;
+  top: 0;
+  z-index: 12;
+  height: 0vw;
+}
