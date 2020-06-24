@@ -5,7 +5,7 @@ var converter = require("number-to-words");
 const loading = Array(101).fill(" ");
 let onloadLength = 4000;
 
-const Onload = (passed) => {
+const Onload = (props) => {
   const { number } = useSpring({
     config: { duration: onloadLength },
     number: 100,
@@ -14,7 +14,7 @@ const Onload = (passed) => {
 
   const { height } = useSpring({
     config: { duration: 400 },
-    height: passed.active ? 100 : 0,
+    height: props.active ? 100 : 0,
     from: { height: 100 },
   });
 
@@ -27,9 +27,8 @@ const Onload = (passed) => {
   useEffect(() => {
     const endOverlay = () => {
       window.scrollTo(0, 0);
-      passed.loaded();
+      props.loaded();
     };
-
     setTimeout(() => endOverlay(), onloadLength);
   }, []);
 
